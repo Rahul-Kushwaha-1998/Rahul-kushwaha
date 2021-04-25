@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #020003;
+    overflow: hidden;
+}
+
+section::before
+{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 97px;
+    background: #c1d241;
+    box-shadow:  19px 19px 38px #D2B4DE,
+             -19px -19px 38px #ebff4f;
+    transform: translate(-250px,-120px);
+}
+
+section::after
+{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 97px;
+    background: #4160d2;
+    box-shadow:  -19px -19px 47px #D2B4DE,
+             19px 19px 47px #6392ff;
+    transform: translate(250px,150px);
+    
+}
+
+section i
+{
+    position: absolute;
+    background: #fff;
+    border-radius: 100%;
+    animation: animate linear infinite;
+}
+section i:nth-child(even)
+{
+    background: transparent;
+    border: 1px solid #fff;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    10%
+    {
+        transform: translateY(0);
+        opacity: 2;
+    }
+    90%
+    {
+        transform: translateY(0);
+        opacity: 2;
+    }
+    100%
+    {
+        transform: translateY(-2000%);
+        opacity: 0;
+    }
+}
+
+.box
+{
+    position: relative;
+    z-index: 1000;
+}
+
+.container
+{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgb(0,0,0,0.1);
+    border: 1px solid rgb(255, 255, 255,0.5);
+    border-right: 1px solid rgb(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);    
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#dycalendar
+{
+  width: 100%;
+  padding: 20px;    
+}
+#dycalendar table
+{
+    width: 100%;
+    margin-top: 40px;
+    border-spacing: 5px;
+}
+#dycalendar table tr:nth-child(1) td
+{
+    background: #fff;
+    color: #111;
+    border-radius: 4px;
+    font-weight: 600;
+}
+#dycalendar table td
+{
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#dycalendar table td:hover
+{
+    background: #ffc300;
+    color: #111 !important;
+}
+.dycalendar-month-container .dycalendar-today-date, .dycalendar-month-container .dycalendar-target-date
+{
+    background: #ffc300;
+    color: #111 !important;
+}
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.prev-btn 
+{
+    background: #ffc300;
+    color: #111;
+    width: 44px;
+    height: 38px;
+    left: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn 
+{
+   background: #ffc300;
+    color: #111;
+    width: 44px;
+    height: 38px;
+    right: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; 
+}
+
+.dycalendar-month-container .dycalendar-span-month-year
+{
+    color: #ffc300;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+    
+ 
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

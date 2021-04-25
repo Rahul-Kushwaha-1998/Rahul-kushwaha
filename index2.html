@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Designed By
+| Rahul |</title>
+    <link rel="stylesheet" href="dycalendar.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+                                      
+<body>
+    <section>
+        <div class="box">
+            <div class="container">
+                <div id="dycalendar"></div>
+            </div>
+        </div>
+    </section>
+    <script src="dycalendar.js"></script>
+    <script>
+      dycalendar.draw({
+        target: '#dycalendar',
+          type: 'month',
+          dayformat: 'full',
+          monthformat: 'full',
+          highlighttargetdate: true,
+          prevnextbutton: 'show'
+          })
+    </script> 
+    <script>
+     function bubbles(){
+         var count = 200;
+         var section = document.querySelector('section');
+         var i =0;
+         while (i < count){
+            var bubble = document.createElement('i');
+            var x = Math.floor(Math.random() * window.innerWidth);
+            var y = Math.floor(Math.random() * window.innerHeight);
+         
+            var size = Math.random() * 10;
+            bubble.style.left = x+'px';
+            bubble.style.top = y+'px';
+            bubble.style.width = 1+size+'px';
+            bubble.style.height = 1+size+'px';
+             
+            bubble.style.animationDuration = 5+size+'s'; 
+            bubble.style.animationDelay = +size+'s'; 
+         
+            section.appendChild(bubble);
+            i++
+     }
+    }
+    bubbles()
+   </script>
+    
+    
+</body>    
+</html>                           
